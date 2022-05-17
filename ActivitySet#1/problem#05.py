@@ -11,6 +11,3 @@ rate=float(input('Enter rate'))
 
 Gross_pay = computepay(hours,rate)
 print('Pay:', Gross_pay)
-
-
-  
