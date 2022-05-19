@@ -4,11 +4,11 @@ while True:
   try:
     num = raw_input("Enter a number: ")
   if num == "done":
-        break
-      n = int(num)
-    if largest is None or n > largest:
+      break
+    n = int(num)
+  if largest is None or n > largest:
       largest = n
-    elif smallest is None or n < smallest:
+  elif smallest is None or n < smallest:
       smallest = n
   except:
     print("Invalid input")
