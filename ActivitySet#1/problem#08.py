@@ -1,7 +1,13 @@
-# Strings
+fname = raw_input("Enter file name: ")
+fh = open(fname)
+count = 0
+total = 0
+for line in fh:
+    if not line.startswith("X-DSPAM-Confidence:") : continue
+    t=line.find("0")
+    number= float(line[t:])
+    count = count + 1
+    total = total + number
 
-text = "X-DSPAM-Confidence:    0.8475"
-startPos = text.find(':')
-piece = text[startPos+1:]
-end = piece
-print(end)
+average = total/count
+print ("Average spam confidence:",average)
