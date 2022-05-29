@@ -1,3 +1,6 @@
 # Tuples
 
-filename = "dataset/mbox-short.txt"
+#filename = "dataset/mbox-short.txt"
+
+
+print('hello world')
